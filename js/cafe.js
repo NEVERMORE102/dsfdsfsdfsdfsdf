@@ -295,7 +295,7 @@ var Cafe = {
   apiRequest: function(method, data, onCallback) {
     var authData = Telegram.WebApp.initDataRaw || '';
     $.ajax(Cafe.apiUrl, {
-      type: 'POST',
+      type: 'GET',
       data: $.extend(data, {_auth: authData, method: method}),
       dataType: 'json',
       xhrFields: {
