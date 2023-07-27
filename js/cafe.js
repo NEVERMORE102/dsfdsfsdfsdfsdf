@@ -305,7 +305,7 @@ var Cafe = {
         onCallback && onCallback(result);
       },
       error: function(xhr, status, error) {
-        onCallback && onCallback({error: "фФФФФ " + method});
+        onCallback && onCallback({error: `${Cafe.apiUrl}`});
       }
     });
   }
