@@ -305,7 +305,7 @@ var Cafe = {
         onCallback && onCallback(result);
       },
       error: function(xhr, status, error) {
-        onCallback && onCallback({error: method + " " + authData});
+        onCallback && onCallback({error: "OOOO " + authData + " " + method});
       }
     });
   }
